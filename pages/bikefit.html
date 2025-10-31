@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bikefit | Buiu Bikes</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo">Buiu <span>Bikes</span></div>
-    <nav id="navbar">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="bikefit.html">Bike Fit Online</a></li>
-        <li><a href="seguro.html">Seguro</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="classificados.html">Classificados</a></li>
-        <li><a href="sobre.html">Quem Somos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  </header>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Bike Fit Online — Buiu Bikes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"/></head><body>
+<header class="header container"><a class="logo" href="../index.html">Buiu <span>Bikes</span></a>
+<nav class="nav"><ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="bikefit.html" class="active">Bike Fit</a></li>
+<li><a href="seguro.html">Seguro</a></li>
+<li><a href="classificados.html">Classificados</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="sobre.html">Quem Somos</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul></nav><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
 
-  <section class="conteudo">
-    
-    <h1>Bike Fit Online</h1>
-    <p>Tenha o ajuste perfeito sem sair de casa! Nosso serviço de Bike Fit Online analisa suas medidas e características de pedal 
-    para ajustar sua bike com precisão, garantindo conforto e performance.</p>
-    <a href="#" class="btn">Solicitar Bike Fit Online</a>
-    
-  </section>
+<main class="container">
+<section class="section">
+<h2>Bike Fit Online — ajuste profissional à distância</h2>
+<p>Nosso Bike Fit Online traz a mesma metodologia técnica usada em atendimentos presenciais: medição de segmentos corporais, análise de vídeos e um relatório prático com recomendações e imagens.</p>
 
-  <footer>
-    <p>&copy; 2025 Buiu Bikes. Todos os direitos reservados.</p>
-  </footer>
+<div class="cards">
+  <div class="card"><h3>O que você recebe</h3><ul><li>Relatório em PDF com medidas e recomendações</li><li>Vídeo explicativo curto com os ajustes</li><li>Sugestões de peças e ajustes finos</li></ul></div>
+  <div class="card"><h3>Como funciona</h3><ol><li>Agende via WhatsApp</li><li>Receba a planilha de medições e orientações para fotos/vídeos</li><li>Envie os arquivos e receba o relatório em até 5 dias úteis</li></ol></div>
+</div>
 
-  <script src="../js/script.js"></script>
-</body>
-</html>
+<div style="margin-top:18px;text-align:center">
+  <a class="btn" href="contato.html">Contratar Bike Fit</a>
+  <a class="btn outline" href="servicos.html">Ver serviços</a>
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="container"><p>&copy; 2025 Buiu Bikes</p></div></footer>
+<script src="../js/script.js"></script></body></html>

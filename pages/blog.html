@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Buiu Bikes</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo">Buiu <span>Bikes</span></div>
-    <nav id="navbar">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="bikefit.html">Bike Fit Online</a></li>
-        <li><a href="seguro.html">Seguro</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="classificados.html">Classificados</a></li>
-        <li><a href="sobre.html">Quem Somos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  </header>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Blog — Buiu Bikes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"/></head><body>
+<header class="header container"><a class="logo" href="../index.html">Buiu <span>Bikes</span></a>
+<nav class="nav"><ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="bikefit.html">Bike Fit</a></li>
+<li><a href="seguro.html">Seguro</a></li>
+<li><a href="classificados.html">Classificados</a></li>
+<li><a href="blog.html" class="active">Blog</a></li>
+<li><a href="sobre.html">Quem Somos</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul></nav><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
 
-  <section class="conteudo">
-    
-    <h1>Blog</h1>
-    <p>Dicas, tutoriais e novidades sobre o mundo do ciclismo. Fique por dentro das melhores práticas e tecnologias para sua bike.</p>
-    
-  </section>
+<main class="container">
+<section class="section">
+<h2>Últimos artigos</h2>
+<p>Conteúdo prático e direto para você cuidar melhor da sua bike e aproveitar mais suas saídas.</p>
 
-  <footer>
-    <p>&copy; 2025 Buiu Bikes. Todos os direitos reservados.</p>
-  </footer>
+<div class="cards">
+  <div class="card"><h3>Como cuidar da transmissão</h3><p>Manual prático para limpeza, lubrificação e vida útil da corrente e cassete.</p><a class="card-link" href="#">Ler mais</a></div>
+  <div class="card"><h3>Escolhendo pneus para cada terreno</h3><p>Guia para escolher pneu certo entre estrada, terra e trilha.</p><a class="card-link" href="#">Ler mais</a></div>
+</div>
+</section>
+</main>
 
-  <script src="../js/script.js"></script>
-</body>
-</html>
+<footer class="footer"><div class="container"><p>&copy; 2025 Buiu Bikes</p></div></footer>
+<script src="../js/script.js"></script></body></html>
