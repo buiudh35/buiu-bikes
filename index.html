@@ -1,94 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buiu Bikes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Buiu Bikes — Oficina Especializada</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <!-- Hero -->
+<header class="header container">
+  <a class="logo" href="index.html">Buiu <span>Bikes</span></a>
+  <nav class="nav"><ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/servicos.html">Serviços</a></li>
+    <li><a href="pages/bikefit.html">Bike Fit</a></li>
+    <li><a href="pages/seguro.html">Seguro</a></li>
+    <li><a href="pages/classificados.html">Classificados</a></li>
+    <li><a href="pages/blog.html">Blog</a></li>
+    <li><a href="pages/sobre.html">Quem Somos</a></li>
+    <li><a href="pages/contato.html">Contato</a></li>
+  </ul></nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<main class="container">
   <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-text">
-        <h1>Pedale com tranquilidade - cuidamos da sua bike</h1>
-        <p>Manutenção, bike fit online e seguro completo — você só precisa se preocupar em curtir o pedal.</p>
-        <a href="#servicos" class="btn">Agende Sua Manutenção</a>
+    <div class="hero-left">
+      <h1>Pedale com tranquilidade - <span>cuidamos da sua bike</span></h1>
+      <p class="lead">Na Buiu Bikes fazemos toda manutenção, ajustes e seguros para sua bicicleta. Atendimento humanizado, rápido e transparente — pensado para quem vive pra pedal.</p>
+      <div class="ctas">
+        <a class="btn" href="pages/servicos.html">Agendar Serviço</a>
+        <a class="btn outline" href="pages/classificados.html">Ver Classificados</a>
       </div>
+      <div style="margin-top:18px;color:var(--muted)">Atendemos na oficina e também serviços remotos (Bike Fit Online).</div>
+    </div>
+    <div class="hero-right">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNY8ofn0eJ34ocPJO6KChRfW4SA_qOCnjgwZw_iEcS5bhLFo9IjOlHX9g-OSgXJoNCa5mzaHyqnXw4nsph0HQwJfWE4uLz6-Bm6Z7t1V59NQXuRYwRuUz7jNpaOiwRIB7gbEPVzdmp" alt="Bicicleta">
     </div>
   </section>
 
-  <!-- Serviços -->
-  <section class="section" id="servicos">
-    <h2>Serviços pensados para você pedalar despreocupado</h2>
-    <p>Oferecemos diversos serviços para você apenas se preocupar em pedalar.</p>
+  <section class="section">
+    <h2>Serviços pensados para performance e longevidade</h2>
+    <p>Oferecemos desde revisões rápidas até serviços especializados em suspensão e transmissões. Cada serviço inclui diagnóstico técnico com checklist entregue ao cliente.</p>
     <div class="cards">
-      <div class="card">
-        <h3>Manutenção Completa</h3>
-        <p>Prestamos a manutenção completa da sua bike, cuidando de cada detalhe — limpeza, ajustes, lubrificação e troca de peças quando necessário — para que você pedale sempre seguro e sem preocupações.</p>
-      </div>
-      <div class="card">
-        <h3>Seguro Buiu Bikes</h3>
-        <p>Proteção completa contra roubo, danos e acidentes. Pedale tranquilo sabendo que sua bike está segura em qualquer situação.</p>
-      </div>
-      <div class="card">
-        <h3>Bike Fit Online</h3>
-        <p>Ajustes posturais remotos com relatório detalhado e vídeo explicativo — conforto e desempenho sem sair de casa.</p>
-      </div>
+      <div class="card"><h3>Revisão Completa</h3><p>Desmontagem, limpeza, lubrificação, troca de peças e ajuste detalhado. Ideal para quem quer segurança e performance.</p></div>
+      <div class="card"><h3>Serviço de Suspensão</h3><p>Manutenção e calibração com parceiros certificados, incluindo troca de óleo e selantes quando necessário.</p></div>
+      <div class="card"><h3>Bike Fit Online</h3><p>Análise postural remota com relatório e vídeo explicativo — ajuste sem sair de casa.</p></div>
     </div>
   </section>
 
-  <!-- Sobre / Por que escolher -->
-  <section class="section" id="sobre">
-    <h2>Mais que manutenção, cuidado de verdade</h2>
-    <p>Profissionais especializados desde 2015, atendimento personalizado, equipamentos certificados e garantia de serviços — tudo para que você pedale tranquilo.</p>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="section" id="depoimentos">
-    <h2>Quem já pedala tranquilo com a Buiu Bikes</h2>
-    <div class="cards">
-      <div class="card">
-        <p>“Minha bike nunca esteve tão bem cuidada. Agora pedalo sem me preocupar com nada!”</p>
-        <strong>— João P.</strong>
-      </div>
-      <div class="card">
-        <p>“O bike fit online mudou completamente meu conforto e performance nas pedaladas.”</p>
-        <strong>— Mariana S.</strong>
-      </div>
-      <div class="card">
-        <p>“O seguro da Buiu Bikes me deu tranquilidade. Recomendo demais!”</p>
-        <strong>— Carlos M.</strong>
-      </div>
+  <section class="section bg" style="padding-top:32px">
+    <h2>O que nos diferencia</h2>
+    <p>Transparência, técnica e compromisso com prazos. Cada serviço tem orçamento detalhado e comunicação via WhatsApp para você acompanhar cada etapa.</p>
+    <div class="cards" style="margin-top:12px">
+      <div class="card"><h3>Garantia técnica</h3><p>Garantimos os serviços realizados e peças instaladas com suporte pós-serviço.</p></div>
+      <div class="card"><h3>Atendimento rápido</h3><p>Recebemos e entregamos bikes com prazo combinado e agendamento online.</p></div>
+      <div class="card"><h3>Profissionalismo</h3><p>Equipe treinada e experiências comprovadas com bicicletas urbanas e de alto rendimento.</p></div>
     </div>
   </section>
 
-  <!-- Blog -->
-  <section class="section" id="blog">
-    <h2>Dicas e novidades do mundo do ciclismo</h2>
-    <p>Acompanhe artigos, tutoriais e sugestões para melhorar sua experiência sobre duas rodas.</p>
-    <a href="blog.html" class="btn">Leia Nosso Blog</a>
-  </section>
-
-  <!-- Contato -->
-  <section class="section" id="contato">
-    <h2>Entre em contato e venha pedalar tranquilo</h2>
-    <p>Rua Exemplo, 123 – Bairro – Cidade/SP</p>
-    <p>WhatsApp: (19) 99999-9999</p>
-    <p>E-mail: contato@buiubikes.com</p>
-    <div class="mapa-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.714529821602!2d-47.30526212548957!3d-22.853850979275662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b9a5ff24b3e3%3A0x4a79db4b9e6e9d6c!2sBuiu%20Bikes!5e0!3m2!1spt-BR!2sbr!4v1735677300000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="section">
+    <h2>Depoimentos</h2>
+    <div class="testimonials">
+      <blockquote><p>“A Buiu deixou minha bike igual nova — atendimento claro e objetivo. Recomendo pra qualquer ciclista.”</p><cite>— Rafael M., ciclista urbano</cite></blockquote>
+      <blockquote><p>“Fiz o Bike Fit Online e senti diferença imediata no conforto e no rendimento.”</p><cite>— Marina A., estrada</cite></blockquote>
     </div>
   </section>
 
-  <!-- Call to Action Final -->
-  <section class="section cta-final">
-    <h2>Comece a pedalar sem preocupações hoje mesmo</h2>
-    <a href="#servicos" class="btn">Agendar Manutenção</a>
-    <a href="#bikefit" class="btn">Fazer Bike Fit Online</a>
+  <section class="section">
+    <h2>Classificados — bikes e peças com procedência</h2>
+    <p>Oferecemos um catálogo de usados revisados e com garantia. Compradores têm a segurança de uma avaliação técnica antes da venda.</p>
+    <div class="cards" style="margin-top:12px">
+      <div class="card"><h3>Veja o catálogo</h3><p><a class="btn outline" href="pages/classificados.html">Acessar classificados</a></p></div>
+      <div class="card"><h3>Quero anunciar</h3><p>Envie fotos e descrição pelo WhatsApp — nós anunciamos para você.</p></div>
+    </div>
   </section>
 
-  <script src="js/script.js"></script>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Buiu Bikes — Oficina especializada. Contato: <a href="https://wa.me/55SEUNUMERO" style="color:var(--accent);text-decoration:none">WhatsApp</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
